@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  # gitlab-runner:
+    # build: .
+    # image: gitlab/gitlab-runner
+
+  ubuntu:
+    build: .
+    image: ubuntu/14.04
+    volumes:
+      - c:/workspace/project/practice-docker/basic/code:/code
